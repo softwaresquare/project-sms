@@ -57,7 +57,7 @@ const Inbox = () => {
                     ullamco laboris nisi ut aliquip ex ea commodo consequat.{" "}
                   </td>
                   <td>
-                    <i className="fas fa-trash fa-lg mx-2"> </i>
+                    <i className="fas delete fa-trash fa-lg mx-2"> </i>
                   </td>
                 </tr>
                 <tr>
@@ -71,7 +71,7 @@ const Inbox = () => {
                     ullamco laboris nisi ut aliquip ex ea commodo consequat.{" "}
                   </td>
                   <td>
-                    <i className="fas fa-trash fa-lg mx-2"> </i>
+                    <i className="fas delete fa-trash fa-lg mx-2"> </i>
                   </td>
                 </tr>
                 <tr>
@@ -89,7 +89,7 @@ const Inbox = () => {
                     deserunt mollit anim id est laborum.
                   </td>
                   <td>
-                    <i className="fas fa-trash fa-lg mx-2"> </i>
+                    <i className="fas delete fa-trash fa-lg mx-2"> </i>
                   </td>
                 </tr>
               </tbody>
