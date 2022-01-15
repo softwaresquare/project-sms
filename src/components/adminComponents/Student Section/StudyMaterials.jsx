@@ -165,6 +165,18 @@ function StudyMaterials() {
                   </div>
                 </div>
               </div>
+              <div className="form-group row align-items-center">
+                <label className="col-3"> Description </label>
+                <div className="col">
+                  <textarea
+                    
+                    placeholder="Enter Description "
+                    required
+                    name="profile-location"
+                    className="form-control"
+                  ></textarea>
+                </div>
+              </div>
               <div className="row justify-content-center mt-4">
                 <button type="submit" className="btn btn-info mr-5">
                   Add New Material

@@ -4,7 +4,8 @@ import "../../../styles/adminStyles/dashboard.css";
 import DefaultHeader from "../DefaultHeader";
 import TableHeader from "../minorComponents/TableHeader";
 import TableFooter from "../minorComponents/TableFooter";
-
+import { NepaliDatePicker } from "nepali-datepicker-reactjs";
+import "nepali-datepicker-reactjs/dist/index.css";
 
 function UpcomingEvents() {
   return (
@@ -125,14 +126,10 @@ function UpcomingEvents() {
       <div className="form-group row align-items-center">
         <label className="col-3">Event Date*</label>
         <div className="col">
-          <input
-            type="date"
-            placeholder="Event Date"
-            required
-            defaultValue
-            name="profile-first-name"
-            className="form-control"
-          />
+        <NepaliDatePicker inputClassName="form-control"
+                              className=""
+                              
+                               />
         </div>
       </div>
       <div className="col" />

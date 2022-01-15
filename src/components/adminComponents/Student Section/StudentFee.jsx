@@ -168,7 +168,7 @@ function StudentFee() {
                   <th scope="col">Name</th>
                   <th scope="col">Class</th>
                   <th scope="col">Due Month/s</th>
-                  <th scope="col">Total Amount (Rs.)</th>
+                  <th scope="col">Pending Amount (Rs.)</th>
                   <th scope="col">Paid Amount (Rs.)</th>
                   <th scope="col">Remarks</th>
                   <th scope="col">Status</th>

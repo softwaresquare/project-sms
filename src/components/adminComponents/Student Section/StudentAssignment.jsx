@@ -5,6 +5,8 @@ import DefaultHeader from "../DefaultHeader";
 import TableHeader from "../minorComponents/TableHeader";
 import TableFooter from "../minorComponents/TableFooter";
 import Tippy from '@tippyjs/react';
+import { NepaliDatePicker } from "nepali-datepicker-reactjs";
+import "nepali-datepicker-reactjs/dist/index.css";
 
 function StudentAssignment() {
   return (
@@ -149,13 +151,10 @@ function StudentAssignment() {
               <div className="form-group row align-items-center">
                 <label className="col-3">Assignment Deadline*</label>
                 <div className="col">
-                  <input
-                    type="date"
-                    required
-                    placeholder="Enter Date of Birth"
-                    name="profile-location"
-                    className="form-control"
-                  />
+                <NepaliDatePicker inputClassName="form-control"
+                              className=""
+                             
+                               />
                 </div>
               </div>
               <div className="form-group row align-items-center">

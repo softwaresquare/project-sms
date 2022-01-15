@@ -39,9 +39,11 @@ function Gallery() {
 
           <div
             className="d-flex justify-content-center"
-            style={{ height: "700px" }}
+            style={{ height: "600px",width:"1100px"  }}
           >
             <Carousel images={images} />
+            
+           
           </div>
 
           {/* ADD NEW IMAGE TO GALLERY */}

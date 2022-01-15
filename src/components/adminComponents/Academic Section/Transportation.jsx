@@ -102,7 +102,7 @@ function Transportation() {
                     type="text"
                     placeholder="Enter Driver's Name"
                     required
-                    name="profile-email"
+                    name="driver-name"
                     className="form-control"
                   />
                 </div>
@@ -114,7 +114,7 @@ function Transportation() {
                     type="email"
                     placeholder="Enter Driver's Contact No."
                     required
-                    name="profile-email"
+                    name="driver-contact"
                     className="form-control"
                   />
                 </div>
@@ -126,7 +126,18 @@ function Transportation() {
                     type="text"
                     placeholder="Enter Vehicle No."
                     required
-                    name="profile-email"
+                    name="vehicle-no"
+                    className="form-control"
+                  />
+                </div>
+              </div>
+              <div className="form-group row align-items-center">
+                <label className="col-3">Transport Route*</label>
+                <div className="col">
+                  <input
+                    type="text"
+                    placeholder="Transport Route"
+                    name="transport-route"
                     className="form-control"
                   />
                 </div>
@@ -137,7 +148,7 @@ function Transportation() {
                   <input
                     type="text"
                     placeholder="Transport Description"
-                    name="profile-location"
+                    name="transport-description"
                     className="form-control"
                   />
                 </div>

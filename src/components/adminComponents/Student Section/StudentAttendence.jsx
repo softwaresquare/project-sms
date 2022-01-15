@@ -4,6 +4,8 @@ import "../../../styles/adminStyles/dashboard.css";
 import DefaultHeader from "../DefaultHeader";
 import { Button, Modal } from "react-bootstrap";
 import Tippy from "@tippyjs/react";
+import { NepaliDatePicker } from "nepali-datepicker-reactjs";
+import "nepali-datepicker-reactjs/dist/index.css";
 
 function StudentAttendence() {
   
@@ -110,13 +112,10 @@ function StudentAttendence() {
             <div className="form-group row align-items-center">
               <label className="col-3">Date*</label>
               <div className="col">
-                <input
-                  type="date"
-                  required
-                  placeholder="Date"
-                  name="profile-location"
-                  className="form-control"
-                />
+              <NepaliDatePicker inputClassName="form-control"
+                              className=""
+                              
+                               />
               </div>
             </div>
             <div className="col" />

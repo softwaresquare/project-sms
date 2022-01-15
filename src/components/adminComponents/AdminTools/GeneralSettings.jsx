@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import Sidebar from "../sidebar/Sidebar";
 import "../../../styles/adminStyles/dashboard.css";
 import DefaultHeader from "../DefaultHeader";
+import { NepaliDatePicker } from "nepali-datepicker-reactjs";
+import "nepali-datepicker-reactjs/dist/index.css";
 
 function GeneralSettings() {
   return (
@@ -50,14 +52,10 @@ function GeneralSettings() {
               <div className="form-group row align-items-center">
                 <label className="col-3">Established In</label>
                 <div className="col">
-                  <input
-                    type="date"
-                    placeholder="First name"
-                    defaultValue="Caspian Valley S.S."
-                    name="profile-first-name"
-                    required
-                    className="form-control"
-                  />
+                <NepaliDatePicker inputClassName="form-control"
+                              className=""
+                              
+                               />
                 </div>
               </div>
               <div className="form-group row align-items-center">
