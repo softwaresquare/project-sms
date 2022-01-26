@@ -198,7 +198,7 @@ function Students() {
                   <div className="col">
                   <NepaliDatePicker inputClassName="form-control"
                               className=""
-                              
+                              options={{ calenderLocale: "en", valueLocale: "en" }}
                                />
                   </div>
                 </div>

@@ -1,7 +1,9 @@
 import React from "react";
 import "../../../styles/adminStyles/dashboard.css";
 import Tippy from "@tippyjs/react";
+import {Dropdown} from "react-bootstrap";
 import 'tippy.js/dist/tippy.css';
+import DropdownMenu from "react-bootstrap/esm/DropdownMenu";
 
 const TableHeader = () => {
   return (
@@ -11,22 +13,18 @@ const TableHeader = () => {
         {/* SHOW RECORDS */}
         <p className="p-2">Show</p>
         <div className="dropdown show">
-          <a
-            className="btn dropdown-toggle"
-            href="#"
-            role="button"
-            id="dropdownMenuLink"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
-            10
-          </a>
-          <div className="dropdown-menu" aria-labelledby="dropdownMenuLink">
-            <a className="dropdown-item">15</a>
-            <a className="dropdown-item">20</a>
-            <a className="dropdown-item">25</a>
-          </div>
+          <Dropdown >
+            <Dropdown.Toggle variant="light">
+              10
+            </Dropdown.Toggle>
+            <Dropdown.Menu>
+              <Dropdown.Item>15</Dropdown.Item>
+              <Dropdown.Item>20</Dropdown.Item>
+              <Dropdown.Item>25</Dropdown.Item>
+            </Dropdown.Menu>
+
+          </Dropdown>
+          
         </div>
         <p className="p-2">Records</p>
       </div>

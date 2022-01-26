@@ -42,7 +42,13 @@ const LeaveNotice = ({ of }) => {
                 <td className=" text-light bg-success">Approved </td>
               )}
               <td>
-                <i class=" btn fas fa-trash fa-lg btn delete "></i>
+              <i class="fas fa-trash fa-lg btn delete"></i>
+                {
+                (of == "Student" ? null : (
+               <span>   <i class="fas fa-check-square fa-lg btn approve"></i>
+                <i class="fas fa-times fa-lg btn delete"></i></span>
+                ))
+              }
               </td>
             </tr>
             <tr>
@@ -86,7 +92,13 @@ const LeaveNotice = ({ of }) => {
               )}
 
               <td>
-                <i class="fas fa-trash fa-lg btn delete"></i>
+              <i class="fas fa-trash fa-lg btn delete"></i>
+                {
+                (of == "Student" ? null : (
+               <span>   <i class="fas fa-check-square fa-lg btn approve"></i>
+                <i class="fas fa-times fa-lg btn delete"></i></span>
+                ))
+              }
               </td>
             </tr>
           </tbody>

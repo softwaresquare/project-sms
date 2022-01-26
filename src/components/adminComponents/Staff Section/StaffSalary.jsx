@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Sidebar from "../sidebar/Sidebar";
 import "../../../styles/adminStyles/dashboard.css";
 import DefaultHeader from "../DefaultHeader";
-import { Button, Modal } from "react-bootstrap";
+import { Button, Modal,Dropdown } from "react-bootstrap";
 import SalaryInvoice from "../minorComponents/SalaryInvoice";
 import TableHeader from "../minorComponents/TableHeader";
 import TableFooter from "../minorComponents/TableFooter";
@@ -66,43 +66,46 @@ function StaffSalary() {
                   <td>Rs. 30,200</td>
                   <td className="text-light bg-danger">Pending</td>
                   <td className="nav-item dropdown">
-                    <button
-                      data-toggle="dropdown"
-                      href="#"
-                      aria-haspopup="true"
-                      aria-expanded="false"
-                      className="btn btn-dark dropdown-toggle"
-                    >
-                      Action
-                    </button>
-                    <div className="dropdown-menu">
-                      <button
-                        className="dropdown-item bg-light btn"
-                        onClick={() => setModalShow(true)}
-                      >
-                        <i className="far fa-file-invoice" />
-                        &nbsp; View Invoice
-                      </button>
-                      <a className="dropdown-item bg-light">
-                        <i className="far fa-money-bill-wave" />
-                        &nbsp; Mark Paid
-                      </a>
-                      <a className="dropdown-item bg-light">
-                        <i className="fas fa-edit" />
-                        &nbsp; Edit
-                      </a>
-                      <button
-                        className="dropdown-item bg-light btn"
-                        onClick={handleShowPayment}
-                      >
-                        <i className="fas fa-money-bill" />
-                        &nbsp; Pay Salary
-                      </button>
-                      <button className="dropdown-item bg-light">
-                        <i className="far fa-trash-alt" />
-                        &nbsp; Delete
-                      </button>
-                    </div>
+                   
+                   
+                    <Dropdown>
+                      <Dropdown.Toggle variant="dark" id="dropdown-basic">
+                        Actions
+                      </Dropdown.Toggle>
+
+                      <Dropdown.Menu>
+                        <Dropdown.Item href="#/action-1">
+                          <i className="far fa-bell" />
+                          &nbsp; Notify
+                        </Dropdown.Item>
+                        <Dropdown.Item
+                          href="#/action-2"
+                          onClick={() => setModalShow(true)}
+                        >
+                          <i className="far fa-file-invoice" />
+                          &nbsp; View Invoice
+                        </Dropdown.Item>
+                        <Dropdown.Item href="#/action-3">
+                          <i className="far fa-check" />
+                          &nbsp; Mark Paid
+                        </Dropdown.Item>
+                        <Dropdown.Item href="#/action-3">
+                          <i className="fas fa-edit" /> &nbsp; Edit
+                        </Dropdown.Item>
+                        <Dropdown.Item
+                          href="#/action-3"
+                          onClick={handleShowPayment}
+                        >
+                          <i className="far fa-credit-card" />
+                          &nbsp; Make Payment
+                        </Dropdown.Item>
+                        <Dropdown.Item href="#/action-3">
+                          <i className="far fa-trash-alt" />
+                          &nbsp; Delete
+                        </Dropdown.Item>
+                      </Dropdown.Menu>
+                    </Dropdown>
+                    
                   </td>
                 </tr>
                 <tr>
@@ -116,45 +119,43 @@ function StaffSalary() {
                     Paid
                   </td>
                   <td className="nav-item dropdown">
-                    <button
-                      data-toggle="dropdown"
-                      href="#"
-                      aria-haspopup="true"
-                      aria-expanded="false"
-                      className="btn btn-dark dropdown-toggle "
-                    >
-                      Action
-                    </button>
-                    <div className="dropdown-menu">
-                      <button
-                        href
-                        className="dropdown-item bg-light btn"
-                        onClick={() => setModalShow(true)}
-                      >
-                        <i className="far fa-file-invoice" />
-                        &nbsp; View Invoice
-                      </button>
-                      <a href className="dropdown-item bg-light">
-                        <i className="far fa-money-bill-wave" />
-                        &nbsp; Mark Paid
-                      </a>
-                      <a href className="dropdown-item bg-light">
-                        <i className="fas fa-edit" />
-                        &nbsp; Edit
-                      </a>
-                      <button
-                        href
-                        className="dropdown-item bg-light btn"
-                        onClick={handleShowPayment}
-                      >
-                        <i className="fas fa-money-bill" />
-                        &nbsp; Pay Salary
-                      </button>
-                      <a href className="dropdown-item bg-light">
-                        <i className="far fa-trash-alt" />
-                        &nbsp; Delete
-                      </a>
-                    </div>
+                  <Dropdown>
+                      <Dropdown.Toggle variant="dark" id="dropdown-basic">
+                        Actions
+                      </Dropdown.Toggle>
+
+                      <Dropdown.Menu>
+                        <Dropdown.Item href="#/action-1">
+                          <i className="far fa-bell" />
+                          &nbsp; Notify
+                        </Dropdown.Item>
+                        <Dropdown.Item
+                          href="#/action-2"
+                          onClick={() => setModalShow(true)}
+                        >
+                          <i className="far fa-file-invoice" />
+                          &nbsp; View Invoice
+                        </Dropdown.Item>
+                        <Dropdown.Item href="#/action-3">
+                          <i className="far fa-check" />
+                          &nbsp; Mark Paid
+                        </Dropdown.Item>
+                        <Dropdown.Item href="#/action-3">
+                          <i className="fas fa-edit" /> &nbsp; Edit
+                        </Dropdown.Item>
+                        <Dropdown.Item
+                          href="#/action-3"
+                          onClick={handleShowPayment}
+                        >
+                          <i className="far fa-credit-card" />
+                          &nbsp; Make Payment
+                        </Dropdown.Item>
+                        <Dropdown.Item href="#/action-3">
+                          <i className="far fa-trash-alt" />
+                          &nbsp; Delete
+                        </Dropdown.Item>
+                      </Dropdown.Menu>
+                    </Dropdown>
                   </td>
                 </tr>
               </tbody>
