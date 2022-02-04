@@ -11,6 +11,7 @@ import {
   FaSms,
   FaImages,
   FaTools,
+  FaSearchDollar
 } from "react-icons/fa";
 import { useHistory, useLocation } from "react-router-dom";
 import logo from '../../../assets/logo.png';
@@ -189,6 +190,12 @@ function Sidebar() {
                 itemId: "/admin-tools/backup-update",
               },
             ],
+          },
+          {
+            title: "Expenses",
+            itemId: "/expenses",
+            elemBefore: () => <FaSearchDollar size="22" />,
+           
           },
         ]}
       />

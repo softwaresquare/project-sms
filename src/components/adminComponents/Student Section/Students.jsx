@@ -307,6 +307,17 @@ function Students() {
                     />
                   </div>
                 </div>
+                <div className="form-group row align-items-center">
+                  <label className="col-3">Medical History</label>
+                  <div className="col">
+                    <textarea
+                    placeholder="Enter medical Problems if any"
+                    required
+                    name="profile-location"
+                    className="form-control"
+                    ></textarea>
+                  </div>
+                </div>
                 <div className="form-group row">
                   <label className="col-3">Photo</label>
                   <div className="col">

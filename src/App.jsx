@@ -31,7 +31,10 @@ import AdminSettings from "./components/adminComponents/AdminTools/AdminSettings
 import SmsMailSettings from "./components/adminComponents/AdminTools/SmsMailSettings";
 import GeneralSettings from "./components/adminComponents/AdminTools/GeneralSettings";
 import BackupUpdate from "./components/adminComponents/AdminTools/BackupUpdate";
+import Expenses from "./components/adminComponents/Expenses"
+
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+
 
 function App() {
   return (
@@ -161,6 +164,11 @@ function App() {
             exact
             path="/admin-tools/backup-update"
             component={BackupUpdate}
+          />
+           <Route
+           
+            path="/expenses"
+            component={Expenses}
           />
         </Switch>
       </div>

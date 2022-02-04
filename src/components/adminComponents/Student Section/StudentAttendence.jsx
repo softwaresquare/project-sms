@@ -123,7 +123,7 @@ function StudentAttendence() {
               <div className="col" />
             </div>
             <div className="row justify-content-center mt-4">
-              <Tippy content={`Take the attendence of above selected students`}>
+              <Tippy content={`Take the attendence of above selected class`}>
                 <button
                   type="submit"
                   className="btn mr-5 btn-info"
@@ -299,12 +299,6 @@ function StudentAttendence() {
               Section: <span>A</span>
             </h5>
               <br />
-
-
-
-
-
-
             <table className="table table-bordered">
               <thead className="thead-dark">
                 <tr id="i4pjui">

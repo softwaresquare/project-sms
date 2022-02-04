@@ -72,6 +72,7 @@ function Dashboard() {
               <div className="card bg-primary text-white h-100">
                 <div className="card-body">
                   <div className="d-flex justify-content-between align-items-center">
+                  
                     <div className="me-3">
                       <div className="text-white-75 ">Students</div>
                       <div className="lead font-weight-bold">13,500</div>
